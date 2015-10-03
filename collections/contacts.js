@@ -7,13 +7,13 @@ Contacts.allow({
     }
   },
 
-  update: function (userId, document, fieldNames, modifier) {
-    if (document.name.length !== 0) {
+  update: (userId, document, fieldNames, modifier) => {
+    if (modifier['$set'].name.length !== 0) {
       return true;
     }
   },
 
-  remove: function (userId, document) {
+  remove: (userId, document) => {
     return true;
   }
 });
