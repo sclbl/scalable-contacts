@@ -16,3 +16,7 @@ textarea {
 .fa-lg {
   vertical-align: 0;
 }
+
+hr.low-margin {
+  margin: 20px 0;
+}
