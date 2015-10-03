@@ -1,4 +1,6 @@
 <template name="contacts">
+  <input type="text" class="u-full-width" placeholder="Search..." data-action="search"/>
+  <hr />
   {{#if contacts.count}}
     <ul>
       {{#each contacts}}
