@@ -1,0 +1,15 @@
+<template name="contacts">
+  {{#if contacts.count}}
+    <ul>
+      {{#each contacts}}
+        <li>
+          <button class="no-button" data-action="open">{{name}}</button><button class="no-button" data-action="remove"><i class="fa fa-trash-o fa-lg"></i></button>
+        </li>
+      {{/each}}
+    </ul>
+  {{else}}
+    <div class="text-center">
+      No contacts found...
+    </div>
+  {{/if}}
+</template>

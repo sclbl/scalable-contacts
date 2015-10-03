@@ -1,0 +1,55 @@
+<template name="form">
+  {{#if isContactSelected}}
+    {{#with selectedContact}}
+      <button type="button" class="u-full-width button">Clear form</button>
+      <hr />
+      <form>
+        <label for="name">Name (Mandatory)</label>
+        <input id="name" class="u-full-width" type="text" placeholder="Name (Mandatory)" value="{{name}}" data-id="name">
+        <label for="position">Position</label>
+        <input id="position" class="u-full-width" type="text" placeholder="Position" value="{{position}}" data-id="position">
+        <label for="company">Company</label>
+        <input id="company" class="u-full-width" type="text" placeholder="Company" value="{{company}}" data-id="company">
+        <label for="phone">Phone</label>
+        <input id="phone" class="u-full-width" type="text" placeholder="Phone" value="{{phone}}" data-id="phone">
+        <label for="email">E-Mail</label>
+        <input id="email" class="u-full-width" type="email" placeholder="E-Mail" value="{{email}}" data-id="email">
+        <label for="website">Website</label>
+        <input id="website" class="u-full-width" type="url" placeholder="Website" value="{{website}}" data-id="website">
+        <label for="street">Street</label>
+        <input id="street" class="u-full-width" type="text" placeholder="Street" value="{{street}}" data-id="street">
+        <label for="postal-code">Postal code</label>
+        <input id="postal-code" class="u-full-width" type="text" placeholder="Postal code" value="{{postalCode}}" data-id="postal-code">
+        <label for="locality">Locality</label>
+        <input id="locality" class="u-full-width" type="text" placeholder="Locality" value="{{locality}}" data-id="locality">
+        <label for="notes">Notes</label>
+        <textarea id="notes" placeholder="Notes" class="u-full-width" data-id="notes">{{notes}}</textarea>
+        <input type="submit" value="Update contact" class="u-full-width button button-primary"/>
+      </form>
+    {{/with}}
+  {{else}}
+    <form>
+      <label for="name">Name (Mandatory)</label>
+      <input id="name" class="u-full-width" type="text" placeholder="Name (Mandatory)" data-id="name">
+      <label for="position">Position</label>
+      <input id="position" class="u-full-width" type="text" placeholder="Position" data-id="position">
+      <label for="company">Company</label>
+      <input id="company" class="u-full-width" type="text" placeholder="Company" data-id="company">
+      <label for="phone">Phone</label>
+      <input id="phone" class="u-full-width" type="text" placeholder="Phone" data-id="phone">
+      <label for="email">E-Mail</label>
+      <input id="email" class="u-full-width" type="email" placeholder="E-Mail" data-id="email">
+      <label for="website">Website</label>
+      <input id="website" class="u-full-width" type="url" placeholder="Website" data-id="website">
+      <label for="street">Street</label>
+      <input id="street" class="u-full-width" type="text" placeholder="Street" data-id="street">
+      <label for="postal-code">Postal code</label>
+      <input id="postal-code" class="u-full-width" type="text" placeholder="Postal code" data-id="postal-code">
+      <label for="locality">Locality</label>
+      <input id="locality" class="u-full-width" type="text" placeholder="Locality" data-id="locality">
+      <label for="notes">Notes</label>
+      <textarea id="notes" placeholder="Notes" class="u-full-width" data-id="notes"></textarea>
+      <input type="submit" value="Save contact" class="u-full-width button button-primary"/>
+    </form>
+  {{/if}}
+</template>

@@ -1,0 +1,18 @@
+body {
+  margin-top: 20px;
+}
+
+textarea {
+  height: 300px;
+}
+
+.no-button {
+  border: 0;
+  padding: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.fa-lg {
+  vertical-align: 0;
+}
