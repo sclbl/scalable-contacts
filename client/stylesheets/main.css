@@ -20,3 +20,8 @@ textarea {
 hr.low-margin {
   margin: 20px 0;
 }
+
+h1 {
+  text-align: center;
+  font-size: 2.4rem;
+}
